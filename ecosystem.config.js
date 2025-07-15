@@ -10,8 +10,10 @@ module.exports = {
 
     env: {
       NODE_ENV: 'production',
-      PORT: 3000,
-      SMTP_PORT: 2525
+      PORT: 443,
+      SMTP_PORT: 25,
+      SSL_KEY_PATH: '/etc/letsencrypt/live/tempiemail.com/privkey.pem',
+      SSL_CERT_PATH: '/etc/letsencrypt/live/tempiemail.com/fullchain.pem'
     }
   }]
 }; 
