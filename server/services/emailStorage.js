@@ -12,7 +12,7 @@ class EmailStorage {
   generateEmailAddress() {
     const randomString = Math.random().toString(36).substring(2, 15);
     const timestamp = Date.now().toString(36);
-    const emailAddress = `${randomString}${timestamp}@tempmail.local`;
+    const emailAddress = `${randomString}${timestamp}@tempiemail.com`;
     
     const metadata = {
       id: uuidv4(),
